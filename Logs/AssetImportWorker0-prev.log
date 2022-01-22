@@ -1,0 +1,399 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.26f1 (7298b473bc1a) revision 7510196'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22000) 64bit Core' Language: 'ko' Physical Memory: 15776 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.26f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/joohs/Desktop/UnityProjects/QuizMaster
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+53726
+Successfully changed project path to: C:/Users/joohs/Desktop/UnityProjects/QuizMaster
+C:/Users/joohs/Desktop/UnityProjects/QuizMaster
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 31.40 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.26f1 (7298b473bc1a)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/joohs/Desktop/UnityProjects/QuizMaster/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3050 Ti Laptop GPU (ID=0x25a0)
+    Vendor:   
+    VRAM:     3990 MB
+    Driver:   30.0.15.1123
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56372
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.003800 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 29.88 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.373 seconds
+Domain Reload Profiling:
+	ReloadAssembly (373ms)
+		BeginReloadAssembly (33ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (291ms)
+			LoadAssemblies (33ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (90ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (18ms)
+			SetupLoadedEditorAssemblies (120ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (30ms)
+				BeforeProcessingInitializeOnLoad (11ms)
+				ProcessInitializeOnLoadAttributes (56ms)
+				ProcessInitializeOnLoadMethodAttributes (20ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.006875 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 30.55 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.722 seconds
+Domain Reload Profiling:
+	ReloadAssembly (722ms)
+		BeginReloadAssembly (88ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (14ms)
+		EndReloadAssembly (596ms)
+			LoadAssemblies (74ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (177ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (29ms)
+			SetupLoadedEditorAssemblies (236ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (31ms)
+				BeforeProcessingInitializeOnLoad (56ms)
+				ProcessInitializeOnLoadAttributes (130ms)
+				ProcessInitializeOnLoadMethodAttributes (12ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.45 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2197 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 95.8 MB.
+System memory in use after: 95.9 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2630.
+Total: 2.787000 ms (FindLiveObjects: 0.197300 ms CreateObjectMapping: 0.086500 ms MarkObjects: 2.448300 ms  DeleteObjects: 0.054000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/neon_round_orange.png
+  artifactKey: Guid(b73f4b3384c689f40a870d4ce71ea5b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/neon_round_orange.png using Guid(b73f4b3384c689f40a870d4ce71ea5b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd55c7d3013110f9aa4fd4ce61080fe6c') in 0.141467 seconds 
+  Import took 0.144318 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000133 seconds.
+  path: Assets/Quiz Master - Gameplay Overview 1.png
+  artifactKey: Guid(58214c049d913fc4695b18f9b8a651a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Quiz Master - Gameplay Overview 1.png using Guid(58214c049d913fc4695b18f9b8a651a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '229c711316aa5940bbcdd329ef42cce9') in 0.011325 seconds 
+  Import took 0.013838 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000135 seconds.
+  path: Assets/Quiz Master - Gameplay Overview 2.png
+  artifactKey: Guid(504ca3c803b6a4a4fbe083ec48c90bae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Quiz Master - Gameplay Overview 2.png using Guid(504ca3c803b6a4a4fbe083ec48c90bae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ded4488d309cec6c10c9f2dedbd4470e') in 0.010500 seconds 
+  Import took 0.013110 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000135 seconds.
+  path: Assets/neon_square_blue.png
+  artifactKey: Guid(500972c9d17c9834dae3fde08e813b19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/neon_square_blue.png using Guid(500972c9d17c9834dae3fde08e813b19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '029379f2d7383bb411f61646685fe911') in 0.011342 seconds 
+  Import took 0.014833 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
+  path: Assets/Quiz Master - Gameplay Overview 3.png
+  artifactKey: Guid(42eedb61d30a19f44b14a68ec1f8af98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Quiz Master - Gameplay Overview 3.png using Guid(42eedb61d30a19f44b14a68ec1f8af98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c50925d15054d782599f6b5d085e82e2') in 0.013345 seconds 
+  Import took 0.016742 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000113 seconds.
+  path: Assets/neon_square_orange.png
+  artifactKey: Guid(c7573328cbf167a4a9bd6294ed1403fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/neon_square_orange.png using Guid(c7573328cbf167a4a9bd6294ed1403fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d5dc177e23ce3434eb208d12c4157b6') in 0.012313 seconds 
+  Import took 0.015180 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000142 seconds.
+  path: Assets/background.png
+  artifactKey: Guid(a219a7f527c769549818bf5f7bf8e278) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/background.png using Guid(a219a7f527c769549818bf5f7bf8e278) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95cee5eb317a36a8a0431b1c8b578d22') in 0.010872 seconds 
+  Import took 0.013427 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7198.241112 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+  artifactKey: Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset using Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1280cc7be10b532b2897fc8654f95d3') in 0.082773 seconds 
+  Import took 0.086552 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000152 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset
+  artifactKey: Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset using Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8c2210586957436df79bf961aeff06e') in 0.018560 seconds 
+  Import took 0.021630 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.402211 seconds.
+  path: Assets
+  artifactKey: Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets using Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42d402b061de3733987d63b9cc3b64de') in 0.006952 seconds 
+  Import took 0.011247 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.656164 seconds.
+  path: Assets/Resources
+  artifactKey: Guid(9f575cf4c1af80847878ea9303b9c4c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources using Guid(9f575cf4c1af80847878ea9303b9c4c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15eb19f265552ce6a9f483d2b70a5f3a') in 0.008077 seconds 
+  Import took 0.012196 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.121760 seconds.
+  path: Assets/Fonts
+  artifactKey: Guid(01097e4baa167294ea5cb3e647d3c735) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts using Guid(01097e4baa167294ea5cb3e647d3c735) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2835d8f46f777e3be67876ee323b7c77') in 0.005846 seconds 
+  Import took 0.010109 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 25.644352 seconds.
+  path: Assets/Fonts/Bodo Amat.otf
+  artifactKey: Guid(1b22a9b8b894a7d4a823b4a6d7535cb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts/Bodo Amat.otf using Guid(1b22a9b8b894a7d4a823b4a6d7535cb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce3995b879eebf41fa79cc7e71908861') in 0.013558 seconds 
+  Import took 0.016940 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000140 seconds.
+  path: Assets/Fonts/CHICKEN Pie Height.otf
+  artifactKey: Guid(08561c86303f0554faa92095fe7747e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts/CHICKEN Pie Height.otf using Guid(08561c86303f0554faa92095fe7747e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75557934bf4c59838541b29d257bab30') in 0.013134 seconds 
+  Import took 0.016124 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000140 seconds.
+  path: Assets/Fonts/CHICKEN Pie.ttf
+  artifactKey: Guid(c769eea9e1044dd45bd1f492e2e8112e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts/CHICKEN Pie.ttf using Guid(c769eea9e1044dd45bd1f492e2e8112e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1dff371b754ef466f6dc25d5d743db13') in 0.016196 seconds 
+  Import took 0.019668 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/Fonts/CHICKEN Pie.otf
+  artifactKey: Guid(79af798c76430e247b8bc5bc3b8817eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts/CHICKEN Pie.otf using Guid(79af798c76430e247b8bc5bc3b8817eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59075ea7ae9807ba44c9d3a389590e1d') in 0.009238 seconds 
+  Import took 0.012792 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000157 seconds.
+  path: Assets/Fonts/CHICKEN Pie Height.ttf
+  artifactKey: Guid(2d35293228939804f85cbde3ca7bbd2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts/CHICKEN Pie Height.ttf using Guid(2d35293228939804f85cbde3ca7bbd2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1974375f5e67175c456a5a52aa0c95c') in 0.010023 seconds 
+  Import took 0.013387 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000115 seconds.
+  path: Assets/Fonts/Bodo Amat.ttf
+  artifactKey: Guid(80953c1265bb5fb4096f997be12afba1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts/Bodo Amat.ttf using Guid(80953c1265bb5fb4096f997be12afba1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a72dcfece1375a130502d9d30958b247') in 0.010598 seconds 
+  Import took 0.013540 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 138.371794 seconds.
+  path: Assets/Fonts/Bodo Amat SDF.asset
+  artifactKey: Guid(8e4497deb6de7964e8e1e2437436a457) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts/Bodo Amat SDF.asset using Guid(8e4497deb6de7964e8e1e2437436a457) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Shader 'TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
+ -> (artifact id: '0e6929d0a1843dd4af2a6a7a0d4fa3a1') in 0.025865 seconds 
+  Import took 0.030143 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.362997 seconds.
+  path: Assets/Fonts/CHICKEN Pie Height SDF.asset
+  artifactKey: Guid(95dab2c71724a044ea4d6344bc0403d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts/CHICKEN Pie Height SDF.asset using Guid(95dab2c71724a044ea4d6344bc0403d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Shader 'TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
+ -> (artifact id: '602f3b12cb785ff64e463681ddb6913d') in 0.027018 seconds 
+  Import took 0.030218 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.313061 seconds.
+  path: Assets/Fonts/CHICKEN Pie SDF.asset
+  artifactKey: Guid(2aee08f6c20182c4c97e4d2c446db8a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts/CHICKEN Pie SDF.asset using Guid(2aee08f6c20182c4c97e4d2c446db8a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Shader 'TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
+ -> (artifact id: 'a6cc4af040dc486a81f961424350db86') in 0.027604 seconds 
+  Import took 0.031427 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 354.134456 seconds.
+  path: Assets/Fonts/Bodo Amat SDF.asset
+  artifactKey: Guid(8e4497deb6de7964e8e1e2437436a457) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts/Bodo Amat SDF.asset using Guid(8e4497deb6de7964e8e1e2437436a457) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Shader 'TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
+ -> (artifact id: '7a15ca7feb2f15a9fffe908b8ddbbb3e') in 0.028500 seconds 
+  Import took 0.031961 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000203 seconds.
+  path: Assets/Fonts/CHICKEN Pie Height SDF.asset
+  artifactKey: Guid(95dab2c71724a044ea4d6344bc0403d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts/CHICKEN Pie Height SDF.asset using Guid(95dab2c71724a044ea4d6344bc0403d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Shader 'TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
+ -> (artifact id: '309f84411fdbf8241ede1d57bc0cd4b8') in 0.025140 seconds 
+  Import took 0.029664 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000120 seconds.
+  path: Assets/Fonts/CHICKEN Pie SDF.asset
+  artifactKey: Guid(2aee08f6c20182c4c97e4d2c446db8a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts/CHICKEN Pie SDF.asset using Guid(2aee08f6c20182c4c97e4d2c446db8a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Shader 'TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
+ -> (artifact id: '3aca8f9779d2d9abb4d3d8428c17519e') in 0.031734 seconds 
+  Import took 0.037137 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 193.014319 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset
+  artifactKey: Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset using Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '171e446c5bb5ca2292eb686b5ebd8505') in 0.018939 seconds 
+  Import took 0.022292 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 307.230943 seconds.
+  path: Assets/Fonts/Sticky Notes.otf
+  artifactKey: Guid(7eb79d1567ea2d349bc9899e07aeb663) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts/Sticky Notes.otf using Guid(7eb79d1567ea2d349bc9899e07aeb663) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3997b7f3c5850dc745cd97e04d3a76ba') in 0.015028 seconds 
+  Import took 0.019009 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000123 seconds.
+  path: Assets/Fonts/Sticky Notes.ttf
+  artifactKey: Guid(48f8e1d780016304a80f02f9bfbfa2a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts/Sticky Notes.ttf using Guid(48f8e1d780016304a80f02f9bfbfa2a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f81b5c7a8553b592b38e843fd11a5e1') in 0.009978 seconds 
+  Import took 0.013612 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.153624 seconds.
+  path: Assets/Fonts/Sticky Notes SDF.asset
+  artifactKey: Guid(dccebe0f566e8f74fbcaea42fd2e0b4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts/Sticky Notes SDF.asset using Guid(dccebe0f566e8f74fbcaea42fd2e0b4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Shader 'TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
+ -> (artifact id: '82ea89666f1fa21dbaecd38108507ea6') in 0.030232 seconds 
+  Import took 0.033766 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 430.398265 seconds.
+  path: Assets/Resources/neon_square_blue.png
+  artifactKey: Guid(500972c9d17c9834dae3fde08e813b19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/neon_square_blue.png using Guid(500972c9d17c9834dae3fde08e813b19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47799afa4dca762319eb7c6582ee1688') in 0.016471 seconds 
+  Import took 0.020362 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.824239 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset
+  artifactKey: Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset using Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d32e2c4153b00e2d0beec6657e0f88f') in 0.018391 seconds 
+  Import took 0.021895 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 629.774475 seconds.
+  path: Assets/Resources/Button.prefab
+  artifactKey: Guid(1128e0a3acf7bc746b47321a175a4b6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Button.prefab using Guid(1128e0a3acf7bc746b47321a175a4b6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Shader 'TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
+ -> (artifact id: '78508795c7b11d157515f7aa756a2806') in 0.033825 seconds 
+  Import took 0.038721 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.249288 seconds.
+  path: Assets/Resources/Button.prefab
+  artifactKey: Guid(1128e0a3acf7bc746b47321a175a4b6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Button.prefab using Guid(1128e0a3acf7bc746b47321a175a4b6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Shader 'TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
+ -> (artifact id: '903c0f5fbadb55a6d503f5b43e519638') in 0.009544 seconds 
+  Import took 0.013198 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
