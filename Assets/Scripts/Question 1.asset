@@ -13,3 +13,9 @@ MonoBehaviour:
   m_Name: Question 1
   m_EditorClassIdentifier: 
   question: Who is the current president of Republic of Korea?
+  answers:
+  - Burack Obama
+  - Donald Trump
+  - Moon Jaein
+  - Joe Biden
+  correctAnswerIndex: 2
