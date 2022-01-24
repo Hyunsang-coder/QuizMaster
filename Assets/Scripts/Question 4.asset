@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3de148c27e65444ba72394796638c62, type: 3}
   m_Name: Question 4
   m_EditorClassIdentifier: 
-  question: What is the correct answer for this simple calculation <1+1 * 20>?
+  question: What is the correct answer for  1+1 * 20?
   answers:
   - 1
   - 40

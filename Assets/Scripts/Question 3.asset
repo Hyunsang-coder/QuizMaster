@@ -13,3 +13,9 @@ MonoBehaviour:
   m_Name: Question 3
   m_EditorClassIdentifier: 
   question: Which is world's biggest city in terms of population?
+  answers:
+  - NewYork
+  - Seoul
+  - Tokyo
+  - Shanghai
+  correctAnswerIndex: 2
