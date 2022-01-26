@@ -7,45 +7,68 @@ using System;
 
 public class Quiz : MonoBehaviour
 {
+    [Header("Question")]
     [SerializeField] TextMeshProUGUI questionText;
     [SerializeField] QuestionSO question;
+
+    [Header("Answer")]
     [SerializeField] GameObject[] answerButtons;
     [SerializeField] int correctAnswerIndex;
     [SerializeField] Sprite defaultAnswerSprite;
     [SerializeField] Sprite correctAnswerSprite;
 
-    
+    [Header("Timer")]
+    [SerializeField] Image timerImage;
+    Timer timer;
+    bool hasAnsweredEarly;
+
+
     void Start()
     {
+        timer = FindObjectOfType<Timer>();
         DisplayQuestion();
     }
 
     void Update()
     {
-        if (Input.GetKey(KeyCode.Space))
+        timerImage.fillAmount = timer.fillFraction;
+        if (timer.loadNextQuestion)
         {
+            hasAnsweredEarly = false;
             GetNextQuestion();
+            timer.loadNextQuestion = false;
+        }
+        else if (!hasAnsweredEarly && !timer.isAnsweringQuestion)
+        {
+            DisplayAnswer(-1);
         }
     }
 
     public void OnAnswerSelected(int index)
     {
+        hasAnsweredEarly = true;
+        DisplayAnswer(index);
+
+        SetButtonState(false);
+        timer.CancelTimer();
+    }
+
+    private void DisplayAnswer(int index)
+    {
         Image buttonImage;
         correctAnswerIndex = question.GetCorrectAnswer();
         if (index == correctAnswerIndex)
         {
-            questionText.text = "Correct!"; 
+            questionText.text = "Correct!";
             buttonImage = answerButtons[index].GetComponentInChildren<Image>();
             buttonImage.sprite = correctAnswerSprite;
         }
         else
         {
-            questionText.text = "The correct answer is:\n" + (correctAnswerIndex+1);
+            questionText.text = "The correct answer is:\n" + (correctAnswerIndex + 1);
             buttonImage = answerButtons[correctAnswerIndex].GetComponentInChildren<Image>();
             buttonImage.sprite = correctAnswerSprite;
         }
-
-        SetButtonState(false);
     }
 
     void GetNextQuestion()
@@ -71,7 +94,6 @@ public class Quiz : MonoBehaviour
 
         for (int i = 0; i < answerButtons.Length; i++)
         {
-
             TextMeshProUGUI buttonText = answerButtons[i].GetComponentInChildren<TextMeshProUGUI>();
             buttonText.text = question.GetAnswer(i);
         }
