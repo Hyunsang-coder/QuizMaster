@@ -9,11 +9,12 @@ public class Timer : MonoBehaviour
 
 
     // 초기화 하지 않은 기본 bool값은 false, 기본 float 값은 0
-    public bool loadNextQuestion;    
-    public float fillFraction;
-    public bool isAnsweringQuestion; 
+    public bool loadNextQuestion; 
+    public bool isAnsweringQuestion;
 
+    public float fillFraction;
     float timerValue;   
+
     void Update()
     {
         UpdateTimer();
@@ -47,10 +48,10 @@ public class Timer : MonoBehaviour
             }
             else
             {
+                // 업데이트 시작 시 첫 번째 실행 
                 isAnsweringQuestion = true;
                 timerValue = timeToCompleteQuestion;
                 loadNextQuestion = true;
-
             }
         }
 

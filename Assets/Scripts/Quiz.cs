@@ -4,12 +4,14 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 using System;
+using Random = UnityEngine.Random;
 
 public class Quiz : MonoBehaviour
 {
     [Header("Question")]
     [SerializeField] TextMeshProUGUI questionText;
-    [SerializeField] QuestionSO question;
+    [SerializeField] List<QuestionSO> questionList = new List<QuestionSO>();
+    QuestionSO currentQuestion;
 
     [Header("Answer")]
     [SerializeField] GameObject[] answerButtons;
@@ -22,12 +24,17 @@ public class Quiz : MonoBehaviour
     Timer timer;
     bool hasAnsweredEarly;
 
+    [Header("Scoring")]
+    [SerializeField] TextMeshProUGUI scoreText;
+    ScoreKeeper scoreKeeper;
+
 
     void Start()
     {
         timer = FindObjectOfType<Timer>();
-        DisplayQuestion();
+        scoreKeeper = FindObjectOfType<ScoreKeeper>();
     }
+
 
     void Update()
     {
@@ -40,7 +47,8 @@ public class Quiz : MonoBehaviour
         }
         else if (!hasAnsweredEarly && !timer.isAnsweringQuestion)
         {
-            DisplayAnswer(-1);
+            return;
+            //DisplayAnswer(-1);
         }
     }
 
@@ -51,17 +59,19 @@ public class Quiz : MonoBehaviour
 
         SetButtonState(false);
         timer.CancelTimer();
+        scoreText.text = "Score: " + scoreKeeper.CalculateScore() + "%";
     }
 
     private void DisplayAnswer(int index)
     {
         Image buttonImage;
-        correctAnswerIndex = question.GetCorrectAnswer();
+        correctAnswerIndex = currentQuestion.GetCorrectAnswer();
         if (index == correctAnswerIndex)
         {
             questionText.text = "Correct!";
             buttonImage = answerButtons[index].GetComponentInChildren<Image>();
             buttonImage.sprite = correctAnswerSprite;
+            scoreKeeper.IncrementCorrectAnswers();
         }
         else
         {
@@ -71,11 +81,27 @@ public class Quiz : MonoBehaviour
         }
     }
 
+    private void GetRandomQuestion()
+    {
+        int randomIndex = Random.Range(0, questionList.Count);
+        currentQuestion = questionList[randomIndex];
+        if (questionList.Contains(currentQuestion))
+        {
+            questionList.Remove(currentQuestion);
+        }
+    }
+
     void GetNextQuestion()
     {
-        SetButtonState(true);
-        SetDefaultButtonSprites();
-        DisplayQuestion();
+        if (questionList.Count > 0)
+        {
+            GetRandomQuestion();
+            SetButtonState(true);
+            SetDefaultButtonSprites();
+            DisplayQuestion();
+            scoreKeeper.IncrementSeenQuestions();
+        }
+        else return;
     }
 
     private void SetDefaultButtonSprites()
@@ -90,12 +116,12 @@ public class Quiz : MonoBehaviour
 
     void DisplayQuestion()
     {
-        questionText.text = question.GetQeustion();
+        questionText.text = currentQuestion.GetQeustion();
 
         for (int i = 0; i < answerButtons.Length; i++)
         {
             TextMeshProUGUI buttonText = answerButtons[i].GetComponentInChildren<TextMeshProUGUI>();
-            buttonText.text = question.GetAnswer(i);
+            buttonText.text = currentQuestion.GetAnswer(i);
         }
     }
 
