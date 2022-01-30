@@ -22,17 +22,24 @@ public class Quiz : MonoBehaviour
     [Header("Timer")]
     [SerializeField] Image timerImage;
     Timer timer;
-    bool hasAnsweredEarly;
+    bool hasAnsweredEarly = true;
 
     [Header("Scoring")]
     [SerializeField] TextMeshProUGUI scoreText;
     ScoreKeeper scoreKeeper;
 
+    [Header("ProgressBar")]
+    public Slider progressBar;
 
-    void Start()
+    public bool isComplete;
+
+
+    void Awake()
     {
         timer = FindObjectOfType<Timer>();
         scoreKeeper = FindObjectOfType<ScoreKeeper>();
+        progressBar.maxValue = questionList.Count;
+        progressBar.value = 0;
     }
 
 
@@ -41,15 +48,23 @@ public class Quiz : MonoBehaviour
         timerImage.fillAmount = timer.fillFraction;
         if (timer.loadNextQuestion)
         {
+            if (progressBar.value == progressBar.maxValue)
+            {
+                isComplete = true;
+                // Complete이라면 조기 종료!
+                return;
+            }
             hasAnsweredEarly = false;
             GetNextQuestion();
             timer.loadNextQuestion = false;
         }
         else if (!hasAnsweredEarly && !timer.isAnsweringQuestion)
         {
-            return;
-            //DisplayAnswer(-1);
+            // 무조건 오답처리 -> -1이라 error 발생
+            DisplayAnswer(-1);
+            SetButtonState(false);
         }
+
     }
 
     public void OnAnswerSelected(int index)
@@ -60,6 +75,8 @@ public class Quiz : MonoBehaviour
         SetButtonState(false);
         timer.CancelTimer();
         scoreText.text = "Score: " + scoreKeeper.CalculateScore() + "%";
+
+        
     }
 
     private void DisplayAnswer(int index)
@@ -100,6 +117,7 @@ public class Quiz : MonoBehaviour
             SetDefaultButtonSprites();
             DisplayQuestion();
             scoreKeeper.IncrementSeenQuestions();
+            progressBar.value++;
         }
         else return;
     }
